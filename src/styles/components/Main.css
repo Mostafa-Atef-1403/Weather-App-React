@@ -1,0 +1,12 @@
+.Main {
+  margin: 0 7rem;
+  padding: 20px 0;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 821px) {
+  .Main {
+    margin: 0 2rem;
+  }
+}/*# sourceMappingURL=Main.css.map */

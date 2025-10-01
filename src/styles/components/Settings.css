@@ -1,0 +1,70 @@
+.Settings {
+  display: flex;
+  font-size: 1.25rem;
+}
+.Settings .theme-toggler .theme-buttons {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  height: 25px;
+  width: 25px;
+  overflow: hidden;
+}
+.Settings .theme-toggler .theme-buttons .light-theme-btn,
+.Settings .theme-toggler .theme-buttons .dark-theme-btn {
+  position: absolute;
+  top: 25px;
+  transition: top 0.5s ease-in-out;
+}
+.Settings .theme-toggler .theme-buttons .light-theme-btn.active,
+.Settings .theme-toggler .theme-buttons .dark-theme-btn.active {
+  top: 0;
+}
+.Settings .settings-btn {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.Settings .settings-menu {
+  position: absolute;
+  z-index: 2;
+  top: calc(70px + 0.25rem);
+  right: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--header-bg-color);
+  width: 250px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+  transform: scale(0.1);
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.Settings .settings-menu.open {
+  transform: scale(1);
+  visibility: visible;
+}
+.Settings .settings-menu .measurement-systems {
+  padding: 0.5rem;
+}
+.Settings .settings-menu .measurement-systems .systems {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+.Settings .settings-menu .measurement-systems .systems .system {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 2rem;
+  margin: 0.25rem 0.25rem 0.25rem 0;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.Settings .settings-menu .measurement-systems .systems .system.active {
+  background-color: var(--primary-text-color);
+  color: var(--main-bg-color);
+}/*# sourceMappingURL=Settings.css.map */
