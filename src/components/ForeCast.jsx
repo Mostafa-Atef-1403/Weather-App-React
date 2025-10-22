@@ -8,7 +8,7 @@ function Forecast({ title, type, data }) {
     <div className="Forecast">
       <div className="forecast-container">
         <h3>{title}</h3>
-        <HorizontalScroll className="widget-container">
+        <div className="widget-container">
           {data.map((singleData) => (
             <div key={singleData.date || singleData.day}>
               {type === "hourly" ? (
@@ -18,7 +18,7 @@ function Forecast({ title, type, data }) {
               )}
             </div>
           ))}
-        </HorizontalScroll>
+        </div>
       </div>
     </div>
   );
