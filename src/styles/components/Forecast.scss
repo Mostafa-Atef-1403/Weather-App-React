@@ -4,6 +4,7 @@
   margin-top: 2rem;
   @include no-text-select;
   .forecast-container{
+    overflow-x: auto;
     h3{
       margin-bottom: 30px;
     }
